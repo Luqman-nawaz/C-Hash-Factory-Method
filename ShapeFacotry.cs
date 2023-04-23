@@ -19,6 +19,7 @@ namespace ASEProject
         /// <param name="shapeType">the string used for comparing to retrieve the case shape</param>
         /// <returns>each case is to return the shape that it is referencing </returns>
         /// <exception cref="ArgumentException">the exception is to be thorwn id none of the cases match</exception>
+        /// getShape is the factory method, calling sub classes of Circle, Rectangle, Triangle or line
         public Shape getShape(String shapeType)
         {
             shapeType = shapeType.ToLower().Trim();
